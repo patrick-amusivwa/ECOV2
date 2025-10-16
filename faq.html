@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - EcoHaven.ae</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌱 EcoHaven.ae</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Frequently Asked Questions</h1>
+                <p>Find answers to common questions about our products and services</p>
+            </div>
+        </section>
+
+        <!-- Search FAQ -->
+        <section class="section">
+            <div class="container">
+                <div class="form-container" style="max-width: 600px; margin: 0 auto;">
+                    <h3 style="color: #2d5a27; margin-bottom: 1rem;">Search FAQ</h3>
+                    <div class="form-group">
+                        <input type="text" id="faqSearch" placeholder="Search for questions..." style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Categories -->
+        <section class="section" style="background: linear-gradient(135deg, #f8f9fa, #e8f5e8);">
+            <div class="container">
+                <h2>Browse by Category</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">🛒</div>
+                        <div class="product-info">
+                            <h3>Orders & Shipping</h3>
+                            <p>Questions about placing orders, shipping times, and delivery</p>
+                            <button class="btn" onclick="scrollToSection('orders')">View Questions</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">🌱</div>
+                        <div class="product-info">
+                            <h3>Products</h3>
+                            <p>Information about our eco-friendly products and materials</p>
+                            <button class="btn" onclick="scrollToSection('products')">View Questions</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">↩️</div>
+                        <div class="product-info">
+                            <h3>Returns & Exchanges</h3>
+                            <p>Our return policy and exchange procedures</p>
+                            <button class="btn" onclick="scrollToSection('returns')">View Questions</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">💳</div>
+                        <div class="product-info">
+                            <h3>Payment & Billing</h3>
+                            <p>Payment methods, billing, and account questions</p>
+                            <button class="btn" onclick="scrollToSection('payment')">View Questions</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Questions -->
+        <section class="section">
+            <div class="container">
+                <div class="faq-container">
+                    
+                    <!-- Orders & Shipping FAQ -->
+                    <div id="orders">
+                        <h2 style="color: #2d5a27; margin-bottom: 2rem;">🛒 Orders & Shipping</h2>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                How long does shipping take?
+                            </div>
+                            <div class="faq-answer">
+                                <p>We offer three shipping options:</p>
+                                <ul>
+                                    <li><strong>Standard Delivery:</strong> 2-3 business days (FREE)</li>
+                                    <li><strong>Express Delivery:</strong> 1 business day (AED 15)</li>
+                                    <li><strong>Same Day Delivery:</strong> Same day (AED 25)</li>
+                                </ul>
+                                <p>Orders placed before 2 PM are processed the same day. Weekend orders are processed on Sunday.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                What areas do you deliver to?
+                            </div>
+                            <div class="faq-answer">
+                                <p>We deliver to all seven emirates in the UAE:</p>
+                                <ul>
+                                    <li>Dubai</li>
+                                    <li>Abu Dhabi</li>
+                                    <li>Sharjah</li>
+                                    <li>Ajman</li>
+                                    <li>Ras Al Khaimah</li>
+                                    <li>Fujairah</li>
+                                    <li>Umm Al Quwain</li>
+                                </ul>
+                                <p>Free delivery is available for orders over AED 100. Remote areas may have additional delivery charges.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                Can I track my order?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! Once your order is shipped, you'll receive a tracking number via email and SMS. You can track your order status in real-time on our website or through our mobile app.</p>
+                                <p>You'll receive updates at each stage: Order Confirmed → Processing → Shipped → Out for Delivery → Delivered.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                What if I'm not home when delivery arrives?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Our delivery team will attempt delivery twice. If you're not available:</p>
+                                <ul>
+                                    <li>We'll leave a delivery note with contact information</li>
+                                    <li>You can reschedule delivery for a convenient time</li>
+                                    <li>Packages can be left with neighbors or building security (with your permission)</li>
+                                    <li>Items will be returned to our warehouse after 3 days</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Products FAQ -->
+                    <div id="products" style="margin-top: 4rem;">
+                        <h2 style="color: #2d5a27; margin-bottom: 2rem;">🌱 Products</h2>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                Are your products really eco-friendly?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Absolutely! All our products are carefully selected based on strict environmental criteria:</p>
+                                <ul>
+                                    <li>Made from sustainable, renewable materials</li>
+                                    <li>Biodegradable or recyclable packaging</li>
+                                    <li>No harmful chemicals or toxins</li>
+                                    <li>Certified by recognized environmental organizations</li>
+                                    <li>Support fair trade and ethical manufacturing</li>
+                                </ul>
+                                <p>We provide detailed information about each product's environmental impact on our product pages.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                How do I care for bamboo products?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Bamboo products are easy to care for:</p>
+                                <ul>
+                                    <li><strong>Bamboo toothbrushes:</strong> Rinse after use, air dry, replace every 3-4 months</li>
+                                    <li><strong>Bamboo cups:</strong> Hand wash with mild soap, avoid dishwasher</li>
+                                    <li><strong>Bamboo utensils:</strong> Hand wash and dry immediately</li>
+                                    <li><strong>General care:</strong> Keep dry when not in use, avoid soaking</li>
+                                </ul>
+                                <p>Proper care ensures your bamboo products last longer and maintain their natural properties.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                What materials are used in your products?
+                            </div>
+                            <div class="faq-answer">
+                                <p>We use only sustainable, natural materials:</p>
+                                <ul>
+                                    <li><strong>Bamboo:</strong> Fast-growing, naturally antimicrobial</li>
+                                    <li><strong>Organic Cotton:</strong> Grown without pesticides or chemicals</li>
+                                    <li><strong>Stainless Steel:</strong> Durable, recyclable, food-safe</li>
+                                    <li><strong>Natural Fibers:</strong> Hemp, jute, and other plant-based materials</li>
+                                    <li><strong>Plant-based Plastics:</strong> Made from renewable resources</li>
+                                </ul>
+                                <p>All materials are sourced from certified suppliers who follow ethical and sustainable practices.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                Do you offer bulk discounts?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! We offer attractive bulk pricing for:</p>
+                                <ul>
+                                    <li><strong>10+ items:</strong> 10% discount</li>
+                                    <li><strong>25+ items:</strong> 15% discount</li>
+                                    <li><strong>50+ items:</strong> 20% discount</li>
+                                    <li><strong>100+ items:</strong> 25% discount</li>
+                                </ul>
+                                <p>Bulk discounts apply automatically at checkout. For larger orders (500+ items), contact our sales team for custom pricing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Returns & Exchanges FAQ -->
+                    <div id="returns" style="margin-top: 4rem;">
+                        <h2 style="color: #2d5a27; margin-bottom: 2rem;">↩️ Returns & Exchanges</h2>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                What is your return policy?
+                            </div>
+                            <div class="faq-answer">
+                                <p>We offer a 30-day money-back guarantee:</p>
+                                <ul>
+                                    <li>Returns accepted within 30 days of delivery</li>
+                                    <li>Items must be unused and in original packaging</li>
+                                    <li>Free return shipping for defective items</li>
+                                    <li>Refunds processed within 5-7 business days</li>
+                                    <li>Exchange for different size/color available</li>
+                                </ul>
+                                <p>Contact our customer service to initiate a return. We'll provide a return label and instructions.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                How do I return an item?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Returning an item is easy:</p>
+                                <ol>
+                                    <li>Contact customer service or use our online return form</li>
+                                    <li>We'll send you a return label via email</li>
+                                    <li>Package the item securely in original packaging</li>
+                                    <li>Attach the return label and drop off at any authorized location</li>
+                                    <li>Track your return status online</li>
+                                </ol>
+                                <p>For defective items, we cover return shipping costs. For change of mind returns, return shipping is at customer's expense.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                Can I exchange an item for a different size or color?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! We offer exchanges for:</p>
+                                <ul>
+                                    <li>Different sizes (if available)</li>
+                                    <li>Different colors (if available)</li>
+                                    <li>Different products of equal or higher value</li>
+                                </ul>
+                                <p>Exchange requests must be made within 30 days. You'll only pay the difference if exchanging for a higher-priced item. Contact customer service to arrange an exchange.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment & Billing FAQ -->
+                    <div id="payment" style="margin-top: 4rem;">
+                        <h2 style="color: #2d5a27; margin-bottom: 2rem;">💳 Payment & Billing</h2>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                What payment methods do you accept?
+                            </div>
+                            <div class="faq-answer">
+                                <p>We accept all major payment methods:</p>
+                                <ul>
+                                    <li><strong>Credit/Debit Cards:</strong> Visa, Mastercard, American Express</li>
+                                    <li><strong>Digital Wallets:</strong> Apple Pay, Google Pay, Samsung Pay</li>
+                                    <li><strong>Bank Transfer:</strong> Direct bank transfer</li>
+                                    <li><strong>Buy Now, Pay Later:</strong> Tabby, Tamara</li>
+                                    <li><strong>Cash on Delivery:</strong> Available for orders under AED 500</li>
+                                </ul>
+                                <p>All payments are processed securely through encrypted channels. We never store your payment information.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                Is my payment information secure?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, your security is our priority:</p>
+                                <ul>
+                                    <li>SSL encryption for all transactions</li>
+                                    <li>PCI DSS compliant payment processing</li>
+                                    <li>No storage of sensitive payment data</li>
+                                    <li>Regular security audits and updates</li>
+                                    <li>Fraud protection and monitoring</li>
+                                </ul>
+                                <p>We use industry-standard security measures to protect your personal and payment information.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                Can I get an invoice for my purchase?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! You can request an invoice:</p>
+                                <ul>
+                                    <li>Automatically generated for all orders</li>
+                                    <li>Sent to your email after purchase</li>
+                                    <li>Available for download from your account</li>
+                                    <li>VAT-inclusive pricing for UAE customers</li>
+                                    <li>Custom invoices available for business customers</li>
+                                </ul>
+                                <p>For business customers, we can provide detailed invoices with company information. Contact our billing department for assistance.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                Do you offer payment plans or installments?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! We offer flexible payment options:</p>
+                                <ul>
+                                    <li><strong>Tabby:</strong> Pay in 4 interest-free installments</li>
+                                    <li><strong>Tamara:</strong> Buy now, pay later options</li>
+                                    <li><strong>Bank Installments:</strong> Available through select banks</li>
+                                    <li><strong>Corporate Accounts:</strong> Net 30 payment terms for businesses</li>
+                                </ul>
+                                <p>Payment plan options are available at checkout. Terms and conditions apply based on your creditworthiness.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- General FAQ -->
+                    <div style="margin-top: 4rem;">
+                        <h2 style="color: #2d5a27; margin-bottom: 2rem;">❓ General Questions</h2>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                How can I contact customer service?
+                            </div>
+                            <div class="faq-answer">
+                                <p>We're here to help! Contact us through:</p>
+                                <ul>
+                                    <li><strong>Phone:</strong> +971 4 123 4567 (9 AM - 6 PM)</li>
+                                    <li><strong>Email:</strong> support@ecohaven.ae</li>
+                                    <li><strong>Live Chat:</strong> Available on our website</li>
+                                    <li><strong>WhatsApp:</strong> +971 50 123 4567</li>
+                                    <li><strong>Contact Form:</strong> Available on our contact page</li>
+                                </ul>
+                                <p>We typically respond within 24 hours via email and within 2 minutes via live chat.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                Do you have a mobile app?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! Our mobile app is available for:</p>
+                                <ul>
+                                    <li><strong>iOS:</strong> Download from App Store</li>
+                                    <li><strong>Android:</strong> Download from Google Play Store</li>
+                                </ul>
+                                <p>App features include:</p>
+                                <ul>
+                                    <li>Easy product browsing and ordering</li>
+                                    <li>Order tracking and history</li>
+                                    <li>Exclusive app-only deals</li>
+                                    <li>Push notifications for updates</li>
+                                    <li>Easy reordering of favorite products</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                Do you offer corporate discounts?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! We offer special pricing for:</p>
+                                <ul>
+                                    <li><strong>Businesses:</strong> Volume discounts for office supplies</li>
+                                    <li><strong>Hotels & Restaurants:</strong> Special rates for hospitality</li>
+                                    <li><strong>Schools & Universities:</strong> Educational discounts</li>
+                                    <li><strong>Non-profits:</strong> Special pricing for environmental organizations</li>
+                                </ul>
+                                <p>Contact our corporate sales team at partnerships@ecohaven.ae for custom pricing and bulk order arrangements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Still Have Questions -->
+        <section class="section" style="background: linear-gradient(135deg, #f8f9fa, #e8f5e8);">
+            <div class="container text-center">
+                <h2>Still Have Questions?</h2>
+                <p>Can't find what you're looking for? Our customer service team is here to help!</p>
+                <div style="margin-top: 2rem;">
+                    <a href="contact.html" class="btn">Contact Us</a>
+                    <a href="tel:+97141234567" class="btn btn-secondary">Call Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 EcoHaven.ae - Making the world greener, one product at a time.</p>
+            <p>🌱 Sustainable Living Made Simple</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const isActive = answer.classList.contains('active');
+            
+            // Close all other FAQ items
+            document.querySelectorAll('.faq-answer').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Toggle current item
+            if (!isActive) {
+                answer.classList.add('active');
+            }
+        }
+
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Search functionality
+        document.getElementById('faqSearch').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question').textContent.toLowerCase();
+                const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+                
+                if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

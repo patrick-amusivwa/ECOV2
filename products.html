@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - EcoHaven.ae</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌱 EcoHaven.ae</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Our Eco-Friendly Products</h1>
+                <p>Discover our carefully curated collection of sustainable home products</p>
+            </div>
+        </section>
+
+        <!-- Product Categories -->
+        <section class="section">
+            <div class="container">
+                <h2>Product Categories</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image"><img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=400&h=300&fit=crop&crop=center" alt="Oral Care Products" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"></div>
+                        <div class="product-info">
+                            <h3>Oral Care</h3>
+                            <p>Bamboo toothbrushes, natural toothpaste, and eco-friendly dental floss</p>
+                            <a href="#oral-care" class="btn">View Products</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center" alt="Drinkware Products" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"></div>
+                        <div class="product-info">
+                            <h3>Drinkware</h3>
+                            <p>Reusable straws, bamboo cups, and stainless steel bottles</p>
+                            <a href="#drinkware" class="btn">View Products</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image"><img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop&crop=center" alt="Bags & Storage Products" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"></div>
+                        <div class="product-info">
+                            <h3>Bags & Storage</h3>
+                            <p>Organic cotton tote bags, mesh produce bags, and storage containers</p>
+                            <a href="#bags" class="btn">View Products</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image"><img src="https://images.unsplash.com/photo-1581578731548-c6a0c3f2f2c0?w=400&h=300&fit=crop&crop=center" alt="Cleaning Products" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"></div>
+                        <div class="product-info">
+                            <h3>Cleaning</h3>
+                            <p>Natural cleaning products, bamboo scrubbers, and eco-friendly sponges</p>
+                            <a href="#cleaning" class="btn">View Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Product Information -->
+        <section class="section" style="background: linear-gradient(135deg, #f8f9fa, #e8f5e8);">
+            <div class="container">
+                <h2>Featured Products</h2>
+                
+                <!-- Oral Care Products -->
+                <div id="oral-care" class="mb-2">
+                    <h3 style="color: #2d5a27; margin-bottom: 2rem;">🦷 Oral Care Collection</h3>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <div class="product-image"><img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=400&h=300&fit=crop&crop=center" alt="Bamboo Toothbrush Set" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"></div>
+                            <div class="product-info">
+                                <h3>Bamboo Toothbrush Set (4-pack)</h3>
+                                <p><strong>Material:</strong> 100% biodegradable bamboo handle with soft bristles</p>
+                                <p><strong>Features:</strong> BPA-free, vegan-friendly, comes with travel case</p>
+                                <p><strong>Benefits:</strong> Reduces plastic waste, naturally antimicrobial</p>
+                                <div class="price">AED 89</div>
+                                <button class="btn" onclick="addToCart('bamboo-toothbrush')">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="https://images.unsplash.com/photo-1581578731548-c6a0c3f2f2c0?w=400&h=300&fit=crop&crop=center" alt="Natural Toothpaste Tablets" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"></div>
+                            <div class="product-info">
+                                <h3>Natural Toothpaste Tablets</h3>
+                                <p><strong>Material:</strong> Zero-waste toothpaste tablets in glass jar</p>
+                                <p><strong>Features:</strong> Fluoride-free, mint flavor, plastic-free packaging</p>
+                                <p><strong>Benefits:</strong> Travel-friendly, lasts 2 months, refillable</p>
+                                <div class="price">AED 45</div>
+                                <button class="btn" onclick="addToCart('toothpaste-tablets')">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drinkware Products -->
+                <div id="drinkware" class="mb-2">
+                    <h3 style="color: #2d5a27; margin-bottom: 2rem;">🥤 Drinkware Collection</h3>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <div class="product-image"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center" alt="Stainless Steel Straw Set" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"></div>
+                            <div class="product-info">
+                                <h3>Stainless Steel Straw Set</h3>
+                                <p><strong>Material:</strong> Food-grade 304 stainless steel</p>
+                                <p><strong>Features:</strong> 4 straight + 4 bent straws, cleaning brush included</p>
+                                <p><strong>Benefits:</strong> Durable, dishwasher safe, BPA-free</p>
+                                <div class="price">AED 55</div>
+                                <button class="btn" onclick="addToCart('steel-straws')">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop&crop=center" alt="Bamboo Travel Cup" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"></div>
+                            <div class="product-info">
+                                <h3>Bamboo Travel Cup</h3>
+                                <p><strong>Material:</strong> Bamboo fiber with silicone lid</p>
+                                <p><strong>Features:</strong> Leak-proof, 350ml capacity, lightweight</p>
+                                <p><strong>Benefits:</strong> Insulates temperature, biodegradable, stylish</p>
+                                <div class="price">AED 75</div>
+                                <button class="btn" onclick="addToCart('bamboo-cup')">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bags & Storage Products -->
+                <div id="bags" class="mb-2">
+                    <h3 style="color: #2d5a27; margin-bottom: 2rem;">🛍️ Bags & Storage Collection</h3>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <div class="product-image"><img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop&crop=center" alt="Organic Cotton Tote Bag" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"></div>
+                            <div class="product-info">
+                                <h3>Organic Cotton Tote Bag</h3>
+                                <p><strong>Material:</strong> 100% organic cotton canvas</p>
+                                <p><strong>Features:</strong> Reinforced handles, 40cm x 35cm, machine washable</p>
+                                <p><strong>Benefits:</strong> Strong, reusable, supports fair trade</p>
+                                <div class="price">AED 45</div>
+                                <button class="btn" onclick="addToCart('cotton-tote')">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop&crop=center" alt="Mesh Produce Bags" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"></div>
+                            <div class="product-info">
+                                <h3>Mesh Produce Bags (5-pack)</h3>
+                                <p><strong>Material:</strong> Organic cotton mesh</p>
+                                <p><strong>Features:</strong> Various sizes, drawstring closure, lightweight</p>
+                                <p><strong>Benefits:</strong> Breathable, washable, eliminates plastic bags</p>
+                                <div class="price">AED 35</div>
+                                <button class="btn" onclick="addToCart('mesh-bags')">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cleaning Products -->
+                <div id="cleaning" class="mb-2">
+                    <h3 style="color: #2d5a27; margin-bottom: 2rem;">🧽 Cleaning Collection</h3>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <div class="product-image"><img src="https://images.unsplash.com/photo-1581578731548-c6a0c3f2f2c0?w=400&h=300&fit=crop&crop=center" alt="Bamboo Scrubber Set" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"></div>
+                            <div class="product-info">
+                                <h3>Bamboo Scrubber Set</h3>
+                                <p><strong>Material:</strong> Natural bamboo fiber</p>
+                                <p><strong>Features:</strong> 3 different textures, biodegradable, antimicrobial</p>
+                                <p><strong>Benefits:</strong> Effective cleaning, naturally antibacterial</p>
+                                <div class="price">AED 25</div>
+                                <button class="btn" onclick="addToCart('bamboo-scrubber')">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="https://images.unsplash.com/photo-1581578731548-c6a0c3f2f2c0?w=400&h=300&fit=crop&crop=center" alt="Natural All-Purpose Cleaner" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"></div>
+                            <div class="product-info">
+                                <h3>Natural All-Purpose Cleaner</h3>
+                                <p><strong>Material:</strong> Plant-based ingredients</p>
+                                <p><strong>Features:</strong> Concentrated formula, refillable bottle, citrus scent</p>
+                                <p><strong>Benefits:</strong> Non-toxic, effective, eco-friendly packaging</p>
+                                <div class="price">AED 40</div>
+                                <button class="btn" onclick="addToCart('natural-cleaner')">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Form -->
+        <section class="section">
+            <div class="container">
+                <h2>Place Your Order</h2>
+                <div class="form-container">
+                    <form id="orderForm">
+                        <h3 style="color: #2d5a27; margin-bottom: 1.5rem;">Order Information</h3>
+                        
+                        <div class="form-group">
+                            <label for="product">Select Product:</label>
+                            <select id="product" name="product" required>
+                                <option value="">Choose a product...</option>
+                                <option value="bamboo-toothbrush">Bamboo Toothbrush Set (4-pack) - AED 89</option>
+                                <option value="toothpaste-tablets">Natural Toothpaste Tablets - AED 45</option>
+                                <option value="steel-straws">Stainless Steel Straw Set - AED 55</option>
+                                <option value="bamboo-cup">Bamboo Travel Cup - AED 75</option>
+                                <option value="cotton-tote">Organic Cotton Tote Bag - AED 45</option>
+                                <option value="mesh-bags">Mesh Produce Bags (5-pack) - AED 35</option>
+                                <option value="bamboo-scrubber">Bamboo Scrubber Set - AED 25</option>
+                                <option value="natural-cleaner">Natural All-Purpose Cleaner - AED 40</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customerName">Full Name:</label>
+                            <input type="text" id="customerName" name="customerName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Delivery Address:</label>
+                            <textarea id="address" name="address" rows="3" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city">City:</label>
+                            <select id="city" name="city" required>
+                                <option value="">Select city...</option>
+                                <option value="dubai">Dubai</option>
+                                <option value="abu-dhabi">Abu Dhabi</option>
+                                <option value="sharjah">Sharjah</option>
+                                <option value="ajman">Ajman</option>
+                                <option value="ras-al-khaimah">Ras Al Khaimah</option>
+                                <option value="fujairah">Fujairah</option>
+                                <option value="umm-al-quwain">Umm Al Quwain</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="delivery">Delivery Method:</label>
+                            <select id="delivery" name="delivery" required>
+                                <option value="">Select delivery...</option>
+                                <option value="standard">Standard Delivery (2-3 days) - FREE</option>
+                                <option value="express">Express Delivery (1 day) - AED 15</option>
+                                <option value="same-day">Same Day Delivery - AED 25</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Special Instructions:</label>
+                            <textarea id="notes" name="notes" rows="2" placeholder="Any special delivery instructions or notes..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn" style="width: 100%;">Place Order</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Benefits -->
+        <section class="section" style="background: linear-gradient(135deg, #f8f9fa, #e8f5e8);">
+            <div class="container">
+                <h2>Why Choose Our Products?</h2>
+                <div class="product-grid">
+                        <div class="product-card">
+                            <div class="product-image"><img src="https://images.unsplash.com/photo-1569163139394-7a0b4b0b8b8b?w=400&h=300&fit=crop&crop=center" alt="100% Eco-Friendly" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"></div>
+                            <div class="product-info">
+                                <h3>100% Eco-Friendly</h3>
+                            <p>All products are made from sustainable, biodegradable materials that won't harm the environment.</p>
+                        </div>
+                    </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center" alt="Quality Tested" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"></div>
+                            <div class="product-info">
+                                <h3>Quality Tested</h3>
+                            <p>Every product undergoes rigorous testing to ensure it meets our high standards for durability and effectiveness.</p>
+                        </div>
+                    </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop&crop=center" alt="Fast Delivery" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"></div>
+                            <div class="product-info">
+                                <h3>Fast Delivery</h3>
+                            <p>Quick and reliable delivery across the UAE with multiple shipping options to suit your needs.</p>
+                        </div>
+                    </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center" alt="Satisfaction Guarantee" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"></div>
+                            <div class="product-info">
+                                <h3>Satisfaction Guarantee</h3>
+                            <p>30-day money-back guarantee if you're not completely satisfied with your purchase.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 EcoHaven.ae - Making the world greener, one product at a time.</p>
+            <p>🌱 Sustainable Living Made Simple</p>
+        </div>
+    </footer>
+
+    <script>
+        function addToCart(productId) {
+            alert('Product added to cart! You can now proceed to the order form below.');
+            // Scroll to order form
+            document.getElementById('orderForm').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your order! We will contact you shortly to confirm the details and arrange delivery.');
+        });
+    </script>
+</body>
+</html>
